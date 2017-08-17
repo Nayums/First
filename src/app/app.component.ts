@@ -18,7 +18,7 @@ studYr: number;
 messages= '';
 printing= false;
 
-private checkPatterns(value:any, pattern: RegExp): Boolean{
+private checkPatterns(value:any, pattern: RegExp): boolean{
   if (pattern.test(value))
     return true;
   else
@@ -58,7 +58,7 @@ listStudents(): void{
   console.log('Showing Stored Students.')
 
 }
- clearValues(){
+ clearValues(): void{
    this.studNo= null;
    this.studFname= null;
    this.studLname= null;
